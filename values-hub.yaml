@@ -31,6 +31,11 @@ clusterGroup:
       source: certified-operators
       namespace: openshift-operators
 
+    servicemesh:
+      name: servicemeshoperator
+      namespace: openshift-operators
+      channel: stable
+
   applications:
     openshift-data-foundations:
       name: openshift-data-foundations
