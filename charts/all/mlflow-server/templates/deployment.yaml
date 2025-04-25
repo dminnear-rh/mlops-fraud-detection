@@ -49,7 +49,6 @@ spec:
               port: mlflow-server
             initialDelaySeconds: 30
           env:
-            {{- if not .Values.objectStorage.objectBucketClaim.enabled -}}
             - name: AWS_ACCESS_KEY_ID
               valueFrom:
                 secretKeyRef:
@@ -60,7 +59,6 @@ spec:
                 secretKeyRef:
                   name: {{ include "mlflow-server.fullname" . }}
                   key: AWS_SECRET_ACCESS_KEY
-            {{- end }}
             - name: MLFLOW_S3_BUCKET_NAME
               valueFrom:
                 configMapKeyRef:
