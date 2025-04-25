@@ -10,7 +10,10 @@ clusterGroup:
     - redhat-ods-operator:
         operatorGroup: true
         targetNamespaces: []
-    - inferencing-app
+    - inferencing-app:
+        labels:
+          opendatahub.io/dashboard: "true"
+          modelmesh-enabled: 'false'
 
   projects:
     - hub
