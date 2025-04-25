@@ -46,7 +46,7 @@ serviceAccount:
 
 database:
   migration:
-    enabled: true
+    enabled: false
 
 # -- Map of annotations to add to the pods
 podAnnotations: {}
