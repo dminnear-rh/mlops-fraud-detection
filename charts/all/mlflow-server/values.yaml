@@ -89,6 +89,8 @@ crunchyPostgres:
 
 postgrescluster:
   postgresVersion: 14
+  imagePostgres: registry.developers.crunchydata.com/crunchydata/crunchy-postgres:ubi8-14.11-0
+  pgBouncerReplicas: 1
 
 service:
   # -- Kubernetes Service type
