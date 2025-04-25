@@ -87,6 +87,8 @@ crunchyPostgres:
   # -- Enable creation of a postgres instance using crunchyPostgres operator
   enabled: true
 
+postgresVersion: 14
+
 service:
   # -- Kubernetes Service type
   type: ClusterIP
