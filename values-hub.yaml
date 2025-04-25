@@ -10,13 +10,11 @@ clusterGroup:
     - redhat-ods-operator
     - inferencing-app
 
-
   projects:
     - hub
     - mlops
     - openshift-storage
     - inferencing-app
-
 
   subscriptions:
     odf:
