@@ -17,6 +17,7 @@ clusterGroup:
     - mlops
     - openshift-storage
     - inferencing-app
+    - openshift-ai
 
   subscriptions:
     odf:
